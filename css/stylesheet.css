@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Coiny&family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=SUSE:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Cantarell, sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+.navbar {
+  height: auto;
+  font-size: 1.6rem;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.4rem 3.2rem;
+}
+
+.navbar-left {
+  display: flex;
+  list-style-type: none;
+  gap: 0.8rem;
+  flex: 1;
+}
+
+.navbar-left a {
+  /* font-size: 1rem; */
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 1.6rem;
+  border-radius: 10px;
+  transition: all ease-in 0.1s;
+}
+
+.navbar-left a:hover {
+  background-color: rgba(21, 34, 25, 0.3);
+}
+
+.navbar-center {
+  flex-shrink: 0;
+}
+
+.navbar-center .logo {
+  width: auto;
+  max-height: 4rem;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 0;
+  flex: 1;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-right-circularbutton {
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: rgba(21, 34, 25, 0.3);
+}
+
+.search {
+  width: max-content;
+  display: flex;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  transition: box-shadow 0.25s;
+}
+
+.search:focus-within {
+  box-shadow: 0 0 0 2px rgb(47, 76, 57, 0.3);
+}
+
+.search-input {
+  font-size: 1.6rem;
+  color: #333;
+  margin-left: 0.8rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 100%;
+  max-width: 20rem;
+  min-width: 0;
+  /* Understand later what min-width:0 does here */
+}
+
+.search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* learn dvh and vh */
+  height: auto;
+  font-size: 1.6rem;
+  /* background-color: black; */
+  background-image:
+    linear-gradient(to right, rgb(18, 29, 21), transparent),
+    url(../resources/eco-friendly-sustainable-kitchens.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content-text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  max-width: 30%;
+  min-width: 40rem;
+}
+
+.hero-content-text h1 {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.hero-content-text p {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 3.2rem;
+}
+
+.hero-content-text button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  border-radius: 20px;
+  gap: 8px;
+  background-color: white;
+  color: #2f4c39;
+  border: none;
+  font-size: 1.6rem;
+  transition: all ease-in 0.1s;
+}
+
+.hero-content-text button:hover {
+  background-color: #2f4c39;
+  color: white;
+}
+
+.hero-badge {
+  position: absolute;
+  right: 10%;
+  bottom: 17%;
+  padding: 1.6rem 1.6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 30rem;
+  max-height: 30rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+}
+
+.hero-badge-row {
+  display: flex;
+  margin-bottom: 2.4rem;
+  justify-content: center;
+  color: white;
+}
+
+.hero-badge-number {
+  color: white;
+  font-size: 4.8rem;
+}
