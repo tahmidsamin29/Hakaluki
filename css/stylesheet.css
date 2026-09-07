@@ -410,3 +410,87 @@ header {
   background-image: linear-gradient(to top, rgb(12, 19, 13), transparent);
   background-blend-mode: multiply;
 }
+
+.special h2 {
+  font-size: 3.2rem;
+}
+
+.special p {
+  font-size: 1.6rem;
+}
+
+.special-bestsellers,
+.special-new_arrivals {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3.2rem;
+}
+
+.special-bestsellers-content {
+  font-size: 1.6rem;
+  width: 80%;
+  margin-left: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.special-new_arrivals-content {
+  font-size: 1.6rem;
+  width: 80%;
+  margin-right: 3.2rem;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.special-bestsellers-image {
+  border-radius: 10px;
+  margin-right: 3.2rem;
+  height: 70vh;
+}
+
+.special-new_arrivals-image {
+  border-radius: 10px;
+  margin-left: 3.2rem;
+  height: 70vh;
+}
+
+.special-bestsellers-image img,
+.special-new_arrivals-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.special-new_arrivals-image {
+  order: -1;
+}
+
+.special-bestsellers-content button,
+.special-new_arrivals-content button {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #257541;
+  cursor: pointer;
+  color: white;
+  align-self: flex-start;
+  transition: 0.2s ease;
+}
+
+.special-bestsellers-content button:hover,
+.special-new_arrivals-content button:hover {
+  background-color: #2d8d4f;
+}
