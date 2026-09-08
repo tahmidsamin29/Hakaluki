@@ -549,3 +549,14 @@ header {
   gap: 1.6rem;
   align-items: center;
 }
+
+.footer-links-trust-boxes {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.footer-links-trust-boxes div {
+  width: 5rem;
+  height: 5rem;
+  background-color: #257541;
+}
