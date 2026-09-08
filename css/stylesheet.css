@@ -16,6 +16,7 @@ body {
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
   font-weight: 400;
+  font-size: 1.6rem;
 }
 
 h1,
@@ -89,7 +90,7 @@ header {
 }
 
 .navbar-center .logo {
-  width: auto;
+  /* width: auto; */
   max-height: 4rem;
 }
 
@@ -98,7 +99,7 @@ header {
   gap: 1.6rem;
   justify-content: flex-end;
   align-items: center;
-  min-width: 0;
+  /* min-width: 0; */
   /* flex: 1; */
 }
 
@@ -116,7 +117,7 @@ header {
 .search {
   width: max-content;
   display: flex;
-  padding: 8px;
+  padding: 0.8rem;
   border-radius: 16px;
   background-color: #f6f6f6;
   transition: box-shadow 0.25s;
@@ -450,6 +451,12 @@ header {
   background-blend-mode: multiply;
 }
 
+.special {
+  margin: 0 auto 3.2rem auto;
+  padding: 0 3.2rem;
+  width: 100%;
+}
+
 .special h2 {
   font-size: 3.2rem;
 }
@@ -469,7 +476,7 @@ header {
 .special-bestsellers-content {
   font-size: 1.6rem;
   width: 80%;
-  margin-left: 3.2rem;
+  /* margin-left: 3.2rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -479,7 +486,7 @@ header {
 .special-new_arrivals-content {
   font-size: 1.6rem;
   width: 80%;
-  margin-right: 3.2rem;
+  /* margin-right: 3.2rem; */
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -489,13 +496,13 @@ header {
 
 .special-bestsellers-image {
   border-radius: 10px;
-  margin-right: 3.2rem;
+  /* margin-right: 3.2rem; */
   height: 70vh;
 }
 
 .special-new_arrivals-image {
   border-radius: 10px;
-  margin-left: 3.2rem;
+  /* margin-left: 3.2rem; */
   height: 70vh;
 }
 
@@ -538,6 +545,7 @@ header {
   display: grid;
   grid-template-rows: 1fr 3fr;
   font-size: 1.6rem;
+  margin-bottom: 3.2rem;
 }
 
 .reviews-heading h2 {
@@ -550,13 +558,189 @@ header {
   align-items: center;
 }
 
+.footer {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+/* newsletter layout code is probably not that great, should fix it later */
+.footer-newsletter {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3.2rem;
+  padding: 0 3.2rem;
+  align-items: center;
+  background-color: grey;
+  margin-bottom: 3.2rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.footer-newsletter-heading {
+  grid-column: 1/2;
+  justify-self: center;
+  /* fix this later */
+  padding-left: 4.8rem;
+}
+
+.footer-newsletter form {
+  grid-column: 2/5;
+}
+.footer-newsletter-heading p {
+  width: 75%;
+}
+/* 
+.footer-newsletter-email {
+  align-self: center;
+} */
+
+.footer h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+.footer h4 {
+  font-size: 1.6rem;
+}
+.footer-links {
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+/* .search {
+  width: max-content;
+  display: flex;
+  padding: 0.8rem;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  transition: box-shadow 0.25s;
+} */
+
+.footer-newsletter-email {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  transition: box-shadow 0.25s;
+}
+
+/* .search:focus-within {
+  box-shadow: 0 0 0 2px rgb(47, 76, 57, 0.3);
+} */
+
+.footer-newsletter-email:focus-within {
+  box-shadow: 0 0 0 2px rgb(47, 76, 57, 0.3);
+}
+
+/* .search-input {
+  font-size: 1.6rem;
+  color: #333;
+  margin-left: 0.8rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 100%;
+  max-width: 20rem;
+  min-width: 0;
+   Understand later what min-width:0 does here 
+} */
+
+.email-input {
+  font-size: 1.6rem;
+  color: #333;
+  margin-left: 0.8rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 100%;
+  max-width: 20rem;
+  min-width: 0;
+}
+
+/* .search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 0.5);
+} */
+
+.email-input::placeholder,
+.email-icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-links-trust {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footer-links-trust p {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
 .footer-links-trust-boxes {
   display: flex;
   gap: 0.8rem;
 }
 
 .footer-links-trust-boxes div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 5rem;
   height: 5rem;
   background-color: #257541;
+  border-radius: 10px;
+}
+
+.star-icon {
+  font-size: 3.2rem;
+  color: white;
+}
+
+.footer-links-company ul,
+.footer-links-shipping_services ul,
+.footer-links-customers ul {
+  list-style-type: none;
+}
+.footer-links-company li,
+.footer-links-shipping_services li,
+.footer-links-customers li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-links-company h4,
+.footer-links-shipping_services h4,
+.footer-links-customers h4 {
+  margin-bottom: 0.8rem;
+}
+.footer-links-company a,
+.footer-links-shipping_services a,
+.footer-links-customers a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.footer-links-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links-logo img {
+  width: 29rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.6rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: white;
 }

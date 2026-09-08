@@ -356,39 +356,64 @@
 
     <footer class="footer">
         <div class="footer-newsletter">
-            <h3>Sign up to our news & offers</h3>
-            <p>Be the first to know about exclusive offers, new services, couriers, tools and more!</p>
+            <div class="footer-newsletter-heading">
+                <h3>Sign up to our news & offers</h3>
+                <p>Be the first to know about exclusive offers, new services, couriers, tools and more!</p>
+            </div>
+
             <form>
-                <input type="text" placeholder="Enter your email">
-                <button>Subscribe</button>
+                <div class="footer-newsletter-email">
+                    <span class="email-icon material-symbols-outlined">
+                        mail
+                    </span>
+                    <input class="email-input" type="email" placeholder="Enter your email">
+                    <!-- <input class="search-input" type="search" placeholder="Search Product"> -->
+                </div>
             </form>
         </div>
 
+
         <div class="footer-links">
-            <div class="footer-links-logo">
-                <img class="logo" src="resources/homedine_logo_1.svg" alt="Homedine Logo" title="Homedine Logo">
-            </div>
-            <!-- might wanna use a figure caption, more semantically correct? -->
-            <div class-footer-links-trust>
-                <figure>
-                    <h5>Trustpilot</h5>
+            <div class="footer-links-images">
+                <div class="footer-links-logo">
+                    <img class="logo" src="resources/homedine_logo_1.svg" alt="Homedine Logo" title="Homedine Logo">
+                </div>
+                <!-- might wanna use a figure caption, more semantically correct? -->
+
+                <figure class="footer-links-trust">
+                    <p>Trustpilot</p>
                     <div class="footer-links-trust-boxes">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <span class="star-icon material-symbols-outlined">star
+                            </span>
+                        </div>
+                        <div>
+                            <span class="star-icon  material-symbols-outlined">
+                                star
+                            </span>
+                        </div>
+                        <div>
+                            <span class="star-icon  material-symbols-outlined">star</span>
+                        </div>
+                        <div>
+                            <span class="star-icon  material-symbols-outlined">star</span>
+                        </div>
+                        <div>
+                            <span class="star-icon  material-symbols-outlined">star</span>
+                        </div>
                     </div>
                     <figcaption>
-                        Trustscore 4.0 | 29,000 reviews.
+                        Trustscore 4.9 | 29,000 reviews.
                     </figcaption>
                 </figure>
+
             </div>
+
 
             <div class="footer-links-company">
                 <uL>
                     <li>
-                        <h5>Company</h5>
+                        <h4>Company</h4>
                     </li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Reviews</a></li>
@@ -402,7 +427,7 @@
             <div class="footer-links-shipping_services">
                 <uL>
                     <li>
-                        <h5>Shipping Services</h5>
+                        <h4>Shipping Services</h4>
                     </li>
                     <li><a href="#">Ship a package</a></li>
                     <li><a href="#">Track a package</a></li>
@@ -416,7 +441,7 @@
             <div class="footer-links-customers">
                 <uL>
                     <li>
-                        <h5>Customers</h5>
+                        <h4>Customers</h4>
                     </li>
                     <li><a href="#">Log in</a></li>
                     <li><a href="#">Register</a></li>
@@ -427,11 +452,12 @@
             </div>
         </div>
 
-        <div footer-bottom>
+        <div class="footer-bottom">
             <p>Copyright &copy; 2009-2026 | All Rights Reserved</p>
         </div>
 
     </footer>
+
 </body>
 
 </html>
