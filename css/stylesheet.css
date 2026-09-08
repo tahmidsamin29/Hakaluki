@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Coiny&family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=SUSE:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,100..900,50;1,9..144,100..900,50&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -11,7 +11,20 @@ html {
 }
 
 body {
-  font-family: Cantarell, sans-serif;
+  font-family: Raleway, sans-serif;
+  line-height: 1.5;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 
 header {
@@ -24,21 +37,30 @@ header {
 }
 
 .navbar {
-  height: auto;
+  /* height: auto; */
+  /* height is auto as default, no need to put it in */
   font-size: 1.6rem;
-  max-width: 1600px;
-  display: flex;
+  /* max-width: 1600px; 
+  fix max-width later
+  */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 3.2rem;
+  /*
+  display:flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  fix complicated flex structure using grid
+  */
   margin: 0 auto;
-  padding: 0.8rem 3.2rem;
+  padding: 0.8rem 3.2rem 0rem 3.2rem;
 }
 
 .navbar-left {
   display: flex;
   list-style-type: none;
   gap: 0.8rem;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .navbar-left a {
@@ -58,7 +80,12 @@ header {
 }
 
 .navbar-center {
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  align-self: center;
+  justify-self: center;
 }
 
 .navbar-center .logo {
@@ -72,7 +99,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   min-width: 0;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .navbar-right a {
@@ -148,12 +175,16 @@ header {
   min-width: 40rem;
 }
 
+.hero-content-text em {
+  font-family: Fraunces, serif;
+  font-weight: 5400;
+}
+
 .hero-content-text h1 {
   font-size: 4.8rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
   color: white;
-  font-weight: 500;
 }
 
 .hero-content-text p {
@@ -216,6 +247,11 @@ header {
   align-items: center;
   margin-bottom: 3.2rem;
 }
+
+.products-heading em {
+  font-family: Fraunces, serif;
+  font-weight: 500;
+}
 .products {
   width: 100%;
   font-size: 1.6rem;
@@ -271,6 +307,9 @@ header {
   color: white;
   padding: 0.4rem 1.6rem;
   z-index: 2;
+  font-family: Fraunces, serif;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .product-card-image-container img {
@@ -283,7 +322,7 @@ header {
 }
 
 .product-card-content p {
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
   height: 4.8rem;
   padding: 0 1.6rem;
 }
@@ -297,7 +336,7 @@ header {
 .product-card-content-action {
   font-size: 2.4rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 3.2rem;
   padding: 0 1.6rem;
@@ -493,4 +532,20 @@ header {
 .special-bestsellers-content button:hover,
 .special-new_arrivals-content button:hover {
   background-color: #2d8d4f;
+}
+
+.reviews {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  font-size: 1.6rem;
+}
+
+.reviews-heading h2 {
+  font-size: 3.2rem;
+}
+
+.reviews-heading {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
 }
