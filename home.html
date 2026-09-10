@@ -8,6 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 
 <body>
@@ -30,10 +31,12 @@
                     <div class="search">
                         <span class="search-icon material-symbols-outlined">search</span>
                         <input class="search-input" type="search" placeholder="Search Product">
+                        <input class="search-input search-input-tablet" type="search" placeholder="Search">
                     </div>
                 </form>
                 <a href="#"><span class="material-symbols-outlined navbar-right-circularbutton">shopping_bag</span></a>
                 <a href="#"><span class="material-symbols-outlined navbar-right-circularbutton">person</span></a>
+                <button><span class="material-symbols-outlined navbar-right-circularbutton">menu</span></button>
             </div>
         </nav>
     </header>
@@ -42,7 +45,10 @@
         <section class="hero">
             <div class="hero-content">
                 <div class="hero-content-text">
-                    <h1>Eco-Friendly <em>Kitchenware</em> for a greener home</h1>
+                    <h1>Eco-Friendly <br class="kitchenware-break"><em>Kitchenware </em><br class="for-break-before">for
+                        <br class="for-break">a
+                        greener home
+                    </h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, temporibus. Labore in harum
                         iusto,
                         nisi nam aut voluptatibus accusantium mollitia quia inventore, excepturi reprehenderit quae
@@ -96,8 +102,8 @@
                         <span class="product-card-badge">
                             New
                         </span>
-                        <img src="resources/cookware.png" alt="Cookware" title="Cookware" width="1000" height="1000"
-                            loading="lazy">
+                        <img class="cookware-png" src="resources/cookware.png" alt="Cookware" title="Cookware"
+                            width="1000" height="1000" loading="lazy">
                     </div>
                     <div class="product-card-content">
                         <p>Non-toxic cookware for sustainable cooking.</p>
@@ -157,7 +163,7 @@
                             loading="lazy">
                     </div>
                     <div class="product-card-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
                         <div class="product-card-content-action">
                             <p class="product-price">
                                 <b>$43.85</b>
@@ -176,7 +182,7 @@
                             height="500" loading="lazy">
                     </div>
                     <div class="product-card-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
                         <div class="product-card-content-action">
                             <p class="product-price">
                                 <b>$43.85</b>
@@ -201,7 +207,7 @@
                     loading="lazy">
 
                 <div class="category-card-content">
-                    <h3>Explore CupEco</h3>
+                    <h3>Explore <br class="explore-break">CupEco</h3>
                     <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
                 </div>
 
@@ -215,7 +221,7 @@
                     title="Wooden Cuttlery" width="1912" height="1080" loading="lazy">
 
                 <div class="category-card-content">
-                    <h3>Explore EcoStationery</h3>
+                    <h3>Explore <br class="explore-break">EcoStationery</h3>
                     <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
                 </div>
 
@@ -229,7 +235,7 @@
 
 
                 <div class="category-card-content">
-                    <h3>Explore NatureSip</h3>
+                    <h3>Explore <br class="explore-break">NatureSip</h3>
                     <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
                 </div>
 
@@ -241,7 +247,7 @@
 
 
                 <div class="category-card-content">
-                    <h3>Explore FreshPitcher</h3>
+                    <h3>Explore <br class="explore-break">FreshPitcher</h3>
                     <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
                 </div>
             </div>
@@ -372,105 +378,108 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-newsletter">
-            <div class="footer-newsletter-heading">
-                <h3>Sign up to our news & offers</h3>
-                <p>Be the first to know about exclusive offers, new services, couriers, tools and more!</p>
-            </div>
-
-            <form>
-                <div class="footer-newsletter-email">
-                    <span class="email-icon material-symbols-outlined">
-                        mail
-                    </span>
-                    <input class="email-input" type="email" placeholder="Enter your email">
-                    <!-- <input class="search-input" type="search" placeholder="Search Product"> -->
+        <div class="footer-newsletter-heading-wrapper">
+            <div class="footer-newsletter">
+                <div class="footer-newsletter-heading">
+                    <h3>Sign up to our news & offers</h3>
+                    <p>Be the first to know about exclusive offers, new services, couriers, tools and more!</p>
                 </div>
-            </form>
-        </div>
 
-
-        <div class="footer-links">
-            <div class="footer-links-images">
-                <div class="footer-links-logo">
-                    <img class="logo" src="resources/homedine_logo_1.svg" alt="Homedine Logo" title="Homedine Logo">
-                </div>
-                <!-- might wanna use a figure caption, more semantically correct? -->
-
-                <figure class="footer-links-trust">
-                    <p>Trustpilot</p>
-                    <div class="footer-links-trust-boxes">
-                        <div>
-                            <span class="star-icon material-symbols-outlined">star
-                            </span>
-                        </div>
-                        <div>
-                            <span class="star-icon  material-symbols-outlined">
-                                star
-                            </span>
-                        </div>
-                        <div>
-                            <span class="star-icon  material-symbols-outlined">star</span>
-                        </div>
-                        <div>
-                            <span class="star-icon  material-symbols-outlined">star</span>
-                        </div>
-                        <div>
-                            <span class="star-icon  material-symbols-outlined">star</span>
-                        </div>
+                <form>
+                    <div class="footer-newsletter-email">
+                        <span class="email-icon material-symbols-outlined">
+                            mail
+                        </span>
+                        <input class="email-input" type="email" placeholder="Enter your email">
+                        <!-- <input class="search-input" type="search" placeholder="Search Product"> -->
                     </div>
-                    <figcaption>
-                        Trustscore 4.9 | 29,000 reviews.
-                    </figcaption>
-                </figure>
-
-            </div>
-
-
-            <div class="footer-links-company">
-                <uL>
-                    <li>
-                        <h4>Company</h4>
-                    </li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Cookie policy</a></li>
-                    <li><a href="#">Terms & conditions</a></li>
-                    <li><a href="#">Acceptable use policy</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                </uL>
-            </div>
-            <div class="footer-links-shipping_services">
-                <uL>
-                    <li>
-                        <h4>Shipping Services</h4>
-                    </li>
-                    <li><a href="#">Ship a package</a></li>
-                    <li><a href="#">Track a package</a></li>
-                    <li><a href="#">Domestic shipping</a></li>
-                    <li><a href="#">International shipping</a></li>
-                    <li><a href="#">Bulk shipping</a></li>
-                    <li><a href="#">Couriers</a></li>
-                    <li><a href="#">Delivery services</a></li>
-                </uL>
-            </div>
-            <div class="footer-links-customers">
-                <uL>
-                    <li>
-                        <h4>Customers</h4>
-                    </li>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Support hub</a></li>
-                    <li><a href="#">Preferences</a></li>
-                </uL>
+                </form>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>Copyright &copy; 2009-2026 | All Rights Reserved</p>
+        <div class="footer-links-wrapper">
+            <div class="footer-links">
+                <div class="footer-links-images">
+                    <div class="footer-links-logo">
+                        <img class="logo" src="resources/homedine_logo_1.svg" alt="Homedine Logo" title="Homedine Logo">
+                    </div>
+                    <!-- might wanna use a figure caption, more semantically correct? -->
+
+                    <figure class="footer-links-trust">
+                        <p>Trustpilot</p>
+                        <div class="footer-links-trust-boxes">
+                            <div>
+                                <span class="star-icon material-symbols-outlined">star
+                                </span>
+                            </div>
+                            <div>
+                                <span class="star-icon  material-symbols-outlined">
+                                    star
+                                </span>
+                            </div>
+                            <div>
+                                <span class="star-icon  material-symbols-outlined">star</span>
+                            </div>
+                            <div>
+                                <span class="star-icon  material-symbols-outlined">star</span>
+                            </div>
+                            <div>
+                                <span class="star-icon  material-symbols-outlined">star</span>
+                            </div>
+                        </div>
+                        <figcaption>
+                            Trustscore 4.9 | 29,000 reviews.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+
+                <div class="footer-links-company">
+                    <uL>
+                        <li>
+                            <h4>Company</h4>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Acceptable use policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </uL>
+                </div>
+                <div class="footer-links-shipping_services">
+                    <uL>
+                        <li>
+                            <h4>Shipping Services</h4>
+                        </li>
+                        <li><a href="#">Ship a package</a></li>
+                        <li><a href="#">Track a package</a></li>
+                        <li><a href="#">Domestic shipping</a></li>
+                        <li><a href="#">International shipping</a></li>
+                        <li><a href="#">Bulk shipping</a></li>
+                        <li><a href="#">Couriers</a></li>
+                        <li><a href="#">Delivery services</a></li>
+                    </uL>
+                </div>
+                <div class="footer-links-customers">
+                    <uL>
+                        <li>
+                            <h4>Customers</h4>
+                        </li>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Support hub</a></li>
+                        <li><a href="#">Preferences</a></li>
+                    </uL>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2009-2026 | All Rights Reserved</p>
+            </div>
         </div>
 
     </footer>
