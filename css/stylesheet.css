@@ -529,13 +529,13 @@ header {
 .special-bestsellers-image {
   border-radius: 10px;
   /* margin-right: 3.2rem; */
-  height: 70vh;
+  height: 60vh;
 }
 
 .special-new_arrivals-image {
   border-radius: 10px;
   /* margin-left: 3.2rem; */
-  height: 70vh;
+  height: 60vh;
 }
 
 .special-bestsellers-image img,
@@ -548,6 +548,10 @@ header {
   /*  overflow-clip-margin: unset; fixes pixelation but why?
   learn later */
   overflow-clip-margin: unset;
+}
+
+.special-new_arrivals-image img{
+  object-position:bottom;
 }
 
 .special-new_arrivals-image {
