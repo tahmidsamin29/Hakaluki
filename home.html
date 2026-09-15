@@ -36,7 +36,9 @@
                 </form>
                 <a href="#"><span class="material-symbols-outlined navbar-right-circularbutton">shopping_bag</span></a>
                 <a href="#"><span class="material-symbols-outlined navbar-right-circularbutton">person</span></a>
-                <button><span class="material-symbols-outlined navbar-right-circularbutton">menu</span></button>
+                <button class="navbar-right-circularbutton-menu"><span
+                        class="material-symbols-outlined navbar-right-circularbutton"
+                        id="hamburger-icon">menu</span></button>
             </div>
         </nav>
     </header>
@@ -55,7 +57,16 @@
                         dignissimos?
                         Rerum iure sed animi?
                     </p>
-                    <button>Shop now<span class="right-icon material-symbols-outlined">arrow_right_alt</span></button>
+                    <div class="hero-buttons">
+                        <button>Shop now<span
+                                class="right-icon material-symbols-outlined">arrow_right_alt</span></button>
+                        <div class="search" id="search-hero">
+                            <span class="search-icon material-symbols-outlined">search</span>
+                            <input class="search-input" type="search" placeholder="Search Product">
+                            <input class="search-input search-input-tablet" type="search" placeholder="Search">
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="hero-badge">
@@ -346,7 +357,7 @@
                 <h2>
                     Thoughtful, Planet-Prioritizing ideas<br>and inspiration ◆ <em>Gallery</em>
                 </h2>
-            </div> 
+            </div>
             <div class="gallery-images">
                 <div class="gallery-image teapot-img" style="grid-area:a">
                     <img src="resources/teapot.jpg" alt="Ceramic Teapot" title="Ceramic Teapot" width="4608"

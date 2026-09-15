@@ -182,6 +182,10 @@ header {
   align-items: center;
 }
 
+#search-hero {
+  display: none;
+}
+
 .hero-content-text {
   display: flex;
   flex-direction: column;
@@ -203,14 +207,18 @@ header {
   color: white;
 }
 
-.for-break-before {
+.kitchenware-break {
+  display: none;
+}
+
+.for-break {
   display: none;
 }
 
 .hero-content-text p {
   font-size: 1.6rem;
   color: white;
-  max-width: 55rem;
+  max-width: 75rem;
 }
 
 .hero-content-text button {
@@ -218,13 +226,13 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0.8rem 1.6rem;
-  border-radius: 20px;
+  border-radius: 16px;
   gap: 0.8rem;
   background-color: white;
   color: #2f4c39;
   border: none;
   font-size: 1.6rem;
-  width: fit-content;
+  width: max-content;
   transition: all ease-in 0.1s;
 }
 
@@ -550,8 +558,8 @@ header {
   overflow-clip-margin: unset;
 }
 
-.special-new_arrivals-image img{
-  object-position:bottom;
+.special-new_arrivals-image img {
+  object-position: bottom;
 }
 
 .special-new_arrivals-image {
