@@ -19,6 +19,10 @@ body {
   font-size: 1.6rem;
 }
 
+img {
+  display: block;
+}
+
 h1,
 h2,
 h3 {
@@ -491,7 +495,6 @@ header {
 
 .special {
   max-width: 1366px;
-  margin: 0 auto;
   margin: 0 auto 3.2rem auto;
   padding: 0 3.2rem;
   width: 100%;
@@ -509,13 +512,13 @@ header {
 .special-new_arrivals {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 3.2rem;
 }
 
 .special-bestsellers-content {
   font-size: 1.6rem;
-  width: 80%;
   /* margin-left: 3.2rem; */
   display: flex;
   flex-direction: column;
@@ -523,9 +526,13 @@ header {
   gap: 3.2rem;
 }
 
+.special-bestsellers-content-mobile,
+.special-new_arrivals-content-mobile {
+  display: none;
+}
+
 .special-new_arrivals-content {
   font-size: 1.6rem;
-  width: 80%;
   /* margin-right: 3.2rem; */
   margin-left: auto;
   display: flex;
@@ -534,16 +541,11 @@ header {
   gap: 3.2rem;
 }
 
-.special-bestsellers-image {
-  border-radius: 10px;
-  /* margin-right: 3.2rem; */
-  height: 60vh;
-}
-
+.special-bestsellers-image,
 .special-new_arrivals-image {
   border-radius: 10px;
-  /* margin-left: 3.2rem; */
-  height: 60vh;
+  height: auto;
+  aspect-ratio: 16/10;
 }
 
 .special-bestsellers-image img,
