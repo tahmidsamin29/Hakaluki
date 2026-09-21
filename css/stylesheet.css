@@ -408,7 +408,7 @@ header {
 .category {
   width: 100%;
   max-width: 1366px;
-  margin: 0 auto;
+  margin: 0 auto 3.2rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.6rem;
@@ -418,12 +418,11 @@ header {
 
 .category-card {
   position: relative;
-  height: 40rem;
+  aspect-ratio: 2/3;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 1);
   background-blend-mode: multiply;
   overflow: hidden;
-  margin-bottom: 3.2rem;
   text-align: center;
 }
 
@@ -435,6 +434,10 @@ header {
   border-radius: 15px;
   z-index: 1;
   transition: 0.4s ease;
+}
+
+#category-card-wooden-cuttlery-img {
+  object-position: right;
 }
 
 .category-card:hover img {
@@ -451,9 +454,18 @@ header {
   transition: 0.4s ease;
 }
 
+.category-card h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.category-card button {
+  gap: 0.2rem;
+}
+
 .category-card-content {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 0;
   right: 0;
   display: flex;
@@ -461,10 +473,11 @@ header {
   align-items: center;
   z-index: 3;
   color: white;
+  margin: 0 1.6rem;
 }
 
 .category-card-content button {
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -688,7 +701,7 @@ header {
   margin: 0 auto;
   margin-bottom: 3.2rem;
   padding: 0 3.2rem;
-  width: calc(100% - 6.4rem);
+  width: 100%;
 }
 
 .gallery-heading {
@@ -726,6 +739,12 @@ header {
   /* transform: scale(1.5); */
   /* overflow-clip-margin fixes pixelation while using cover but at what cost? learn later */
   overflow-clip-margin: unset;
+}
+#gallery-teapot-img {
+  object-position: left;
+}
+#gallery-woodykitchen-img {
+  object-position: 10% 50%;
 }
 
 .footer {

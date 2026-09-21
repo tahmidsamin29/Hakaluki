@@ -30,10 +30,10 @@
   .product-card-image-container {
     height: 30rem;
   }
-
+  /* 
   .category-card {
     height: 35rem;
-  }
+  } */
 
   .category {
     gap: 1.4rem;
@@ -42,11 +42,21 @@
   .gallery-images {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "a f c"
-      "d e b";
+      "f e a"
+      "f d d"
+      "b b c";
   }
   .ceramicplate-img img {
     object-position: left;
+  }
+  #gallery-woodykitchen-img {
+    object-position: 40% 50%;
+  }
+  #gallery-teapot-img {
+    object-position: 20% 50%;
+  }
+  #gallery-teapot-img {
+    object-position: 20% 50%;
   }
 }
 
@@ -65,10 +75,6 @@
     padding-right: 3.2rem;
     display: flex;
     justify-content: space-between;
-  }
-
-  .explore-break {
-    display: block;
   }
 
   .review-cards {
@@ -105,6 +111,12 @@
   }
 }
 
+@media (max-width: 64rem) {
+  .explore-break {
+    display: block;
+  }
+}
+
 @media (max-width: 61rem) {
   .hero-badge {
     display: none;
@@ -132,9 +144,9 @@
   .category {
     gap: 1rem;
   }
-  .category-card {
+  /* .category-card {
     height: 30rem;
-  }
+  } */
   .special-bestsellers-image,
   .special-new_arrivals-image {
     aspect-ratio: auto;
@@ -187,13 +199,6 @@
   .review-cards {
     grid-template-columns: 1fr 1fr;
   }
-  .gallery-images {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 20rem);
-    grid-template-areas:
-      "a f c"
-      "d e b";
-  }
 }
 
 @media (max-width: 47rem) {
@@ -213,6 +218,9 @@
   .special-bestsellers,
   .special-new_arrivals {
     gap: 2.4rem;
+  }
+  #gallery-teapot-img {
+    object-position: 25% 50%;
   }
 }
 
@@ -270,6 +278,26 @@
   .special-bestsellers-content,
   .special-new_arrivals-content {
     order: 3;
+  }
+  .category {
+    grid-template-columns: 1fr 1fr;
+  }
+  .category-card {
+    aspect-ratio: 1/1;
+  }
+  #category-card-wooden-spoons-img {
+    object-position: 50% 30%;
+  }
+  .explore-break {
+    display: none;
+  }
+  .gallery-images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "d d"
+      "b a"
+      "f c"
+      "f e";
   }
 }
 
@@ -329,6 +357,18 @@
     display: flex;
     gap: 0.8rem;
     justify-content: space-between;
+  }
+  .category {
+    grid-template-columns: 1fr 1fr;
+  }
+  .category-card {
+    aspect-ratio: 1/1;
+  }
+  .category-card button {
+    display: none;
+  }
+  .explore-break {
+    display: block;
   }
 }
 
