@@ -78,7 +78,8 @@
   }
 
   .review-cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 0.8rem;
   }
 }
 
@@ -392,12 +393,39 @@
     border-radius: 20px 20px 0 0;
   }
   .product-card-content-action {
-    flex-direction: column;
     gap: 0rem;
     margin-bottom: 1.6rem;
   }
   .product-card {
     border-radius: 20px;
+  }
+  .product-card .shopping-bag {
+    display: block;
+    background-color: #257541;
+    padding: 0.8rem;
+    border-radius: 1000px;
+    color: white;
+    font-size: 2.4rem;
+  }
+  .product-card button {
+    display: none;
+  }
+  .reviews-heading {
+    gap: 1.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .review-cards {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+  .review-card {
+    min-height: 0;
+    gap: 1.6rem;
+    padding: 2.4rem 1.6rem;
+  }
+  .reviews-heading p {
+    width: 80%;
   }
 }
 

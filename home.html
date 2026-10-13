@@ -1,95 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homedine</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script src="js/script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <ul class="navbar-left">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Bestsellers</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-
-
-            <div class="navbar-center">
-                <img class="logo" src="resources/homedine_logo_1.svg" alt="Homedine Logo" title="Homedine Logo">
+      <nav class="navbar">
+        <ul class="navbar-left">
+          <li><a class="navbar-left-buttons" href="#">Shop</a></li>
+          <!-- <div class="product-category"> -->
+          <li id="product-category-title">
+            <a class="navbar-left-buttons" href="#">Products</a>
+            <div class="product-category-box">
+              <ul class="product-category-list1">
+                <li><a href="#">Cookware</a></li>
+                <li><a href="#">Tableware & Dinnerware</a></li>
+                <li><a href="#">Food Storage</a></li>
+                <li><a href="#">Utensils & Tools</a></li>
+                <li><a href="#">Drinkware</a></li>
+              </ul>
+              <ul class="product-category-list2">
+                <li><a href="#">Cleaning & Dish Care</a></li>
+                <li><a href="#">Zero-Waste Essentials</a></li>
+                <li><a href="#">Small Appliances</a></li>
+                <li><a href="#">Gifts & Sets</a></li>
+                <li><a href="#">Sale & New Arrivals</a></li>
+              </ul>
             </div>
+          </li>
 
-            <div class="navbar-right">
-                <form>
-                    <div class="search">
-                        <span class="search-icon material-symbols-outlined">search</span>
-                        <input class="search-input" type="search" placeholder="Search Product">
-                        <input class="search-input search-input-tablet" type="search" placeholder="Search">
-                    </div>
-                </form>
-                <a href="#"><span class="material-symbols-outlined navbar-right-circularbutton">shopping_bag</span></a>
-                <a href="#"><span class="material-symbols-outlined navbar-right-circularbutton">person</span></a>
-                <button class="navbar-right-circularbutton-menu"><span
-                        class="material-symbols-outlined navbar-right-circularbutton"
-                        id="hamburger-icon">menu</span></button>
+          <!-- </div> -->
+          <li><a class="navbar-left-buttons" href="#">Gallery</a></li>
+          <li><a class="navbar-left-buttons" href="#">About</a></li>
+        </ul>
+
+        <div class="navbar-center">
+          <img
+            class="logo"
+            src="resources/homedine_logo_1.svg"
+            alt="Homedine Logo"
+            title="Homedine Logo"
+          />
+        </div>
+
+        <div class="navbar-right">
+          <form>
+            <div class="search-box">
+              <div class="search">
+                <span class="search-icon material-symbols-outlined"
+                  >search</span
+                >
+                <input
+                  class="search-input"
+                  id="nav-search"
+                  type="search"
+                  placeholder="Search Product"
+                />
+                <input
+                  class="search-input search-input-tablet"
+                  id="nav-search-tablet"
+                  type="search"
+                  placeholder="Search"
+                />
+              </div>
+              <div class="result-box">
+                <!-- <ul>
+                  <li>
+                    <span class="search-icon material-symbols-outlined"
+                      >search</span
+                    >lol
+                  </li>
+                  <li>
+                    <span class="search-icon material-symbols-outlined"
+                      >search</span
+                    >bol
+                  </li>
+                  <li>
+                    <span class="search-icon material-symbols-outlined"
+                      >search</span
+                    >bol
+                  </li>
+                  <li>
+                    <span class="search-icon material-symbols-outlined"
+                      >search</span
+                    >bol
+                  </li>
+                  <li>
+                    <span class="search-icon material-symbols-outlined"
+                      >search</span
+                    >bol
+                  </li>
+                </ul> -->
+              </div>
             </div>
-        </nav>
+          </form>
+          <a href="#"
+            ><span class="material-symbols-outlined navbar-right-circularbutton"
+              >shopping_bag</span
+            ></a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined navbar-right-circularbutton"
+              >person</span
+            ></a
+          >
+          <button class="navbar-right-circularbutton-menu">
+            <span
+              class="material-symbols-outlined navbar-right-circularbutton"
+              id="hamburger-icon"
+              >menu</span
+            >
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-content-text">
-                    <h1>Eco-Friendly <br class="kitchenware-break"><em>Kitchenware </em><br class="for-break-before">for
-                        <br class="for-break">a
-                        greener home
-                    </h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, temporibus. Labore in harum
-                        iusto,
-                        nisi nam aut voluptatibus accusantium mollitia quia inventore, excepturi reprehenderit quae
-                        dignissimos?
-                        Rerum iure sed animi?
-                    </p>
-                    <div class="hero-buttons">
-                        <button>Shop now<span
-                                class="right-icon material-symbols-outlined">arrow_right_alt</span></button>
-                        <div class="search" id="search-hero">
-                            <span class="search-icon material-symbols-outlined">search</span>
-                            <input class="search-input" type="search" placeholder="Search Product">
-                            <input class="search-input search-input-tablet" type="search" placeholder="Search">
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="hero-badge">
-                    <div class="hero-badge-row">
-                        <p>Natural,<br>Sustainable,<br>Eco-conscious.</p>
-                        <span class="material-symbols-outlined">eco</span>
-                    </div>
-                    <p class="hero-badge-number"><b>96%</b></p>
-                </div>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-content-text">
+            <h1>
+              Eco-Friendly <br class="kitchenware-break" /><em>Kitchenware </em
+              ><br class="for-break-before" />for <br class="for-break" />a
+              greener home
+            </h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laboriosam, temporibus. Labore in harum iusto, nisi nam aut
+              voluptatibus accusantium mollitia quia inventore, excepturi
+              reprehenderit quae dignissimos? Rerum iure sed animi?
+            </p>
+            <div class="hero-buttons">
+              <button>
+                Shop now<span class="right-icon material-symbols-outlined"
+                  >arrow_right_alt</span
+                >
+              </button>
+              <div class="search" id="search-hero">
+                <span class="search-icon material-symbols-outlined"
+                  >search</span
+                >
+                <input
+                  class="search-input"
+                  type="search"
+                  placeholder="Search Product"
+                />
+                <input
+                  class="search-input search-input-tablet"
+                  type="search"
+                  placeholder="Search"
+                />
+              </div>
             </div>
+          </div>
 
-        </section>
-
-        <section class="products">
-            <div class="products-heading">
-                <h2>Eco Essentials Planet-Friendly<br> Bestselling ◆ <em>Products</em></h2>
-                <a class="products-heading-link" href="#">More Products<span class="material-symbols-outlined">
-                        arrow_forward
-                    </span></a>
+          <div class="hero-badge">
+            <div class="hero-badge-row">
+              <p>Natural,<br />Sustainable,<br />Eco-conscious.</p>
+              <span class="material-symbols-outlined">eco</span>
             </div>
-            <div class="product-cards">
-                <!-- <div class="product-card">
+            <p class="hero-badge-number"><b>96%</b></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="products-heading">
+          <h2>
+            Eco Essentials Planet-Friendly<br />
+            Bestselling ◆ <em>Products</em>
+          </h2>
+          <a class="products-heading-link" href="#"
+            >More Products<span class="material-symbols-outlined">
+              arrow_forward
+            </span></a
+          >
+        </div>
+        <div class="product-cards">
+          <!-- <div class="product-card">
 
                     <div class="product-card-image-container">
                         <span class="product-card-badge">
@@ -203,303 +301,404 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-        </section>
+        </div>
+      </section>
 
-        <Figure class="products-latter">
-            <img src="resources/compressed/KitchenBackground_compressed.jpg" alt="Modern Kitchen" title="Modern Kitchen"
-                width="5930" height="3554" loading="lazy">
-        </Figure>
+      <figure class="products-latter">
+        <img
+          src="resources/compressed/KitchenBackground_compressed.jpg"
+          alt="Modern Kitchen"
+          title="Modern Kitchen"
+          width="5930"
+          height="3554"
+          loading="lazy"
+        />
+      </figure>
 
-        <section class="category">
+      <section class="category">
+        <div class="category-card">
+          <div class="category-card-gradient"></div>
+          <img
+            id="category-card-wooden-mug-img"
+            src="resources/mug.jpg"
+            alt="Wooden Mug"
+            title="Wooden Mug"
+            width="1080"
+            height="1440"
+            loading="lazy"
+          />
 
-            <div class="category-card">
-                <div class="category-card-gradient"></div>
-                <img id="category-card-wooden-mug-img" src="resources/mug.jpg" alt="Wooden Mug" title="Wooden Mug"
-                    width="1080" height="1440" loading="lazy">
+          <div class="category-card-content">
+            <h3>Explore <br class="explore-break" />CupEco</h3>
+            <!-- <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button> -->
+          </div>
+        </div>
 
-                <div class="category-card-content">
-                    <h3>Explore <br class="explore-break">CupEco</h3>
-                    <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
-                </div>
+        <div class="category-card">
+          <div class="category-card-gradient"></div>
+          <img
+            id="category-card-wooden-cuttlery-img"
+            src="resources/wooden-cutlery-on-eco-friendly-table.jpg"
+            alt="Wooden Cuttlery"
+            title="Wooden Cuttlery"
+            width="1912"
+            height="1080"
+            loading="lazy"
+          />
 
+          <div class="category-card-content">
+            <h3>Explore <br class="explore-break" />EcoStationery</h3>
+            <!-- <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button> -->
+          </div>
+        </div>
 
+        <div class="category-card">
+          <div class="category-card-gradient"></div>
+          <img
+            id="category-card-wooden-spoons-img"
+            src="resources/Spoons.png"
+            alt="Wooden Spoons"
+            title="Wooden Spoons"
+            width="640"
+            height="960"
+            loading="lazy"
+          />
 
-            </div>
+          <div class="category-card-content">
+            <h3>Explore <br class="explore-break" />NatureSip</h3>
+            <!-- <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button> -->
+          </div>
+        </div>
+        <div class="category-card">
+          <div class="category-card-gradient"></div>
+          <img
+            id="category-card-wooden-mug-flask"
+            src="resources/exploring-eco-friendly-bamboo-water-bottle.jpg"
+            alt="Wooden flask"
+            title="Wooden flask"
+            width="1024"
+            height="1024"
+            loading="lazy"
+          />
 
-            <div class="category-card">
-                <div class="category-card-gradient"></div>
-                <img id="category-card-wooden-cuttlery-img" src="resources/wooden-cutlery-on-eco-friendly-table.jpg"
-                    alt="Wooden Cuttlery" title="Wooden Cuttlery" width="1912" height="1080" loading="lazy">
+          <div class="category-card-content">
+            <h3>Explore <br class="explore-break" />FreshPitcher</h3>
+            <!-- <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button> -->
+          </div>
+        </div>
+      </section>
 
-                <div class="category-card-content">
-                    <h3>Explore <br class="explore-break">EcoStationery</h3>
-                    <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
-                </div>
+      <section class="special">
+        <div class="special-bestsellers">
+          <h2 class="special-bestsellers-content-mobile">Best Sellers</h2>
+          <div class="special-bestsellers-content">
+            <h2 class="special-bestsellers-content-wide">Best Sellers</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              exercitationem vero id minus aperiam consequuntur vel molestias
+              cupiditate? Asperiores rem inventore, aliquid nisi maxime maiores
+              aspernatur veritatis dolorem dolor voluptas.
+            </p>
+            <button>
+              Shop now<span class="material-symbols-outlined">
+                arrow_forward
+              </span>
+            </button>
+          </div>
+          <div class="special-bestsellers-image">
+            <img
+              src="resources/bestsellers.jpg"
+              alt="Rice Cooker"
+              title="Fried rice in rice cooker"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="special-new_arrivals">
+          <h2 class="special-new_arrivals-content-mobile">New Arrivals</h2>
+          <div class="special-new_arrivals-content">
+            <h2 class="special-new_arrivals-content-wide">New Arrivals</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              exercitationem vero id minus aperiam consequuntur vel molestias
+              cupiditate? Asperiores rem inventore, aliquid nisi maxime maiores
+              aspernatur veritatis dolorem dolor voluptas.
+            </p>
+            <button>
+              Shop now<span class="material-symbols-outlined">
+                arrow_forward
+              </span>
+            </button>
+          </div>
+          <div class="special-new_arrivals-image">
+            <img
+              src="resources/newarrivals.jpg"
+              alt="Three Rice Cookers"
+              title="Three rice cookers"
+              width="2000"
+              height="2000"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
 
-            </div>
+      <section class="reviews">
+        <div class="reviews-heading">
+          <h2>4.9/5</h2>
+          <p>
+            More than <em>28,000 5-Star</em> Reviews for Our Award-Winning Eco
+            Products
+          </p>
+        </div>
 
-
-            <div class="category-card">
-                <div class="category-card-gradient"></div>
-                <img id="category-card-wooden-spoons-img" src="resources/Spoons.png" alt="Wooden Spoons"
-                    title="Wooden Spoons" width="640" height="960" loading="lazy">
-
-
-                <div class="category-card-content">
-                    <h3>Explore <br class="explore-break">NatureSip</h3>
-                    <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
-                </div>
-
-            </div>
-            <div class="category-card">
-                <div class="category-card-gradient"></div>
-                <img id="category-card-wooden-mug-flask" src="resources/exploring-eco-friendly-bamboo-water-bottle.jpg"
-                    alt="Wooden flask" title="Wooden flask" width="1024" height="1024" loading="lazy">
-
-
-                <div class="category-card-content">
-                    <h3>Explore <br class="explore-break">FreshPitcher</h3>
-                    <button>Shop<span class="material-symbols-outlined">arrow_right_alt</span></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="special">
-            <div class="special-bestsellers">
-                <h2 class="special-bestsellers-content-mobile">Best Sellers</h2>
-                <div class="special-bestsellers-content">
-                    <h2 class="special-bestsellers-content-wide">Best Sellers</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet exercitationem vero id minus
-                        aperiam consequuntur vel molestias cupiditate? Asperiores rem inventore, aliquid nisi maxime
-                        maiores
-                        aspernatur veritatis dolorem dolor voluptas.</p>
-                    <button>Shop now<span class="material-symbols-outlined">
-                            arrow_forward
-                        </span></button>
-                </div>
-                <div class="special-bestsellers-image">
-                    <img src="resources/bestsellers.jpg" alt="Rice Cooker" title="Fried rice in rice cooker" width="600"
-                        height="600" loading="lazy">
-                </div>
-
-            </div>
-            <div class="special-new_arrivals">
-                <h2 class="special-new_arrivals-content-mobile">New Arrivals</h2>
-                <div class="special-new_arrivals-content">
-                    <h2 class="special-new_arrivals-content-wide">New Arrivals</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet exercitationem vero id minus
-                        aperiam consequuntur vel molestias cupiditate? Asperiores rem inventore, aliquid nisi maxime
-                        maiores
-                        aspernatur veritatis dolorem dolor voluptas.</p>
-                    <button>Shop now<span class="material-symbols-outlined">
-                            arrow_forward
-                        </span></button>
-                </div>
-                <div class="special-new_arrivals-image">
-                    <img src="resources/newarrivals.jpg" alt="Three Rice Cookers" title="Three rice cookers"
-                        width="2000" height="2000" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <section class="reviews">
-            <div class="reviews-heading">
-                <h2>
-                    4.9/5
-                </h2>
-                <p>
-                    More than <em>28,000 5-Star</em> Reviews for Our Award-Winning Eco Products
-                </p>
-            </div>
-
-            <div class="review-cards">
-                <!-- <div class="reviews-cards"></div>
+        <div class="review-cards">
+          <!-- <div class="reviews-cards"></div>
                 <div class="reviews-cards"></div>
                 <div class="reviews-cards"></div>
                 <div class="reviews-cards"></div>
                 <div class="reviews-cards"></div> -->
-                <fig class="review-card">
-                    <blockquote>
-                        <span class="review-card-quotes">❝</span>HomeDine makes sustainable living effortless.
-                        Absolutely love their eco-friendly products!
-                    </blockquote>
-                    <figcaption><span class="review-cards-name"> Chef Marcus Vance</span><br><span
-                            class="review-cards-description">Home Cook & Recipe Developer</span></figcaption>
-                </fig>
-                <fig class="review-card">
-                    <blockquote>
-                        <span class="review-card-quotes">❝</span>HomeDine helped me transform my home into a more
-                        sustainable space overnight.
-                    </blockquote>
-                    <figcaption><span class="review-cards-name">Maya Sterling</span><br> <span
-                            class="review-cards-description">Co-founder, Green Living Hub</span></figcaption>
-                </fig>
-                <fig class="review-card">
-                    <blockquote>
-                        <span class="review-card-quotes">❝</span>Practical, stylish, and planet-friendly. HomeDine got
-                        every detail right!
-                    </blockquote>
-                    <figcaption><span class="review-cards-name">Chef Marcus Vance</span><br>
-                        <span class="review-cards-description">Culinary Instructor & Food Stylist</span>
-                    </figcaption>
-                </fig>
-                <fig class="review-card">
-                    <blockquote>
-                        <span class="review-card-quotes">❝</span>Beautiful design meets true eco-consciousness. HomeDine
-                        exceeded my expectations.
-                    </blockquote>
-                    <figcaption><span class="review-cards-name">Aarav Patel</span><br> <span
-                            class="review-cards-description">Zero-Waste Living Blogger</span></figcaption>
-                </fig>
-            </div>
-        </section>
+          <fig class="review-card">
+            <blockquote>
+              <span class="review-card-quotes">❝</span>HomeDine makes
+              sustainable living effortless. Absolutely love their eco-friendly
+              products!
+            </blockquote>
+            <figcaption>
+              <span class="review-cards-name"> Chef Marcus Vance</span
+              ><br /><span class="review-cards-description"
+                >Home Cook & Recipe Developer</span
+              >
+            </figcaption>
+          </fig>
+          <fig class="review-card">
+            <blockquote>
+              <span class="review-card-quotes">❝</span>HomeDine helped me
+              transform my home into a more sustainable space overnight.
+            </blockquote>
+            <figcaption>
+              <span class="review-cards-name">Maya Sterling</span><br />
+              <span class="review-cards-description"
+                >Co-founder, Green Living Hub</span
+              >
+            </figcaption>
+          </fig>
+          <fig class="review-card">
+            <blockquote>
+              <span class="review-card-quotes">❝</span>Practical, stylish, and
+              planet-friendly. HomeDine got every detail right!
+            </blockquote>
+            <figcaption>
+              <span class="review-cards-name">Chef Marcus Vance</span><br />
+              <span class="review-cards-description"
+                >Culinary Instructor & Food Stylist</span
+              >
+            </figcaption>
+          </fig>
+          <fig class="review-card">
+            <blockquote>
+              <span class="review-card-quotes">❝</span>Beautiful design meets
+              true eco-consciousness. HomeDine exceeded my expectations.
+            </blockquote>
+            <figcaption>
+              <span class="review-cards-name">Aarav Patel</span><br />
+              <span class="review-cards-description"
+                >Zero-Waste Living Blogger</span
+              >
+            </figcaption>
+          </fig>
+        </div>
+      </section>
 
-        <section class="gallery">
-            <div class="gallery-heading">
-                <h2>
-                    Thoughtful, Planet-Prioritizing ideas<br>and inspiration ◆ <em>Gallery</em>
-                </h2>
-            </div>
-            <div class="gallery-images">
-                <div class="gallery-image teapot-img" style="grid-area:a">
-                    <img id="gallery-teapot-img" src="resources/teapot.jpg" alt="Ceramic Teapot" title="Ceramic Teapot"
-                        width="4608" height="3072" loading="lazy">
-                </div>
-                <div class="gallery-image fruitbowl-img" style="grid-area:b">
-                    <img id="gallery-fruitbowl-img" src="resources/compressed/fruit_bowl_compressed.jpg"
-                        alt="Wooden Fruit Bowl" title="Wooden Fruit Bowl" width="4992" height="3744" loading="lazy">
-                </div>
-                <div class="gallery-image woodenspoons-img" style="grid-area:c">
-                    <img id="gallery-woodenspoons-img"
-                        src="resources/compressed/wooden_spoons_inside_mug_compressed.jpg" alt="Wooden Spoons"
-                        title="Wooden Spoons" width="4000" height="6000" loading="lazy">
-                </div>
-                <div class="gallery-image ceramicplate-img" style="grid-area:d">
-                    <img id="gallery-ceramicplate-img" src="resources/compressed/ceramic_plate_compressed.jpg"
-                        alt="Ceramic Plate" title="Ceramic Plate" width="6240" height="4160" loading="lazy">
-                </div>
-                <div class="gallery-image pot-img" style="grid-area:e">
-                    <img id="gallery-pot-img" src="resources/compressed/black_pot_compressed.jpg"
-                        alt="Ceramic Cooking Pot" title="Ceramic Cooking Pot" width="3000" height="2980" loading="lazy">
-                </div>
-                <div class="gallery-image gallery-image-kitchen" style="grid-area:f">
-                    <img id="gallery-woodykitchen-img"
-                        src="resources/compressed/brown_themed_kitchen_interior_compressed.jpg" alt="Woody Kitchen"
-                        title="Woody Kitchen" width="3015" height="4523" loading="lazy">
-                </div>
-            </div>
-        </section>
-
+      <section class="gallery">
+        <div class="gallery-heading">
+          <h2>
+            Thoughtful, Planet-Prioritizing ideas<br />and inspiration ◆
+            <em>Gallery</em>
+          </h2>
+        </div>
+        <div class="gallery-images">
+          <div class="gallery-image teapot-img" style="grid-area: a">
+            <img
+              id="gallery-teapot-img"
+              src="resources/teapot.jpg"
+              alt="Ceramic Teapot"
+              title="Ceramic Teapot"
+              width="4608"
+              height="3072"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-image fruitbowl-img" style="grid-area: b">
+            <img
+              id="gallery-fruitbowl-img"
+              src="resources/compressed/fruit_bowl_compressed.jpg"
+              alt="Wooden Fruit Bowl"
+              title="Wooden Fruit Bowl"
+              width="4992"
+              height="3744"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-image woodenspoons-img" style="grid-area: c">
+            <img
+              id="gallery-woodenspoons-img"
+              src="resources/compressed/wooden_spoons_inside_mug_compressed.jpg"
+              alt="Wooden Spoons"
+              title="Wooden Spoons"
+              width="4000"
+              height="6000"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-image ceramicplate-img" style="grid-area: d">
+            <img
+              id="gallery-ceramicplate-img"
+              src="resources/compressed/ceramic_plate_compressed.jpg"
+              alt="Ceramic Plate"
+              title="Ceramic Plate"
+              width="6240"
+              height="4160"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-image pot-img" style="grid-area: e">
+            <img
+              id="gallery-pot-img"
+              src="resources/compressed/black_pot_compressed.jpg"
+              alt="Ceramic Cooking Pot"
+              title="Ceramic Cooking Pot"
+              width="3000"
+              height="2980"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery-image gallery-image-kitchen" style="grid-area: f">
+            <img
+              id="gallery-woodykitchen-img"
+              src="resources/compressed/brown_themed_kitchen_interior_compressed.jpg"
+              alt="Woody Kitchen"
+              title="Woody Kitchen"
+              width="3015"
+              height="4523"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-newsletter-heading-wrapper">
-            <div class="footer-newsletter">
-                <div class="footer-newsletter-heading">
-                    <h3>Sign up to our news & offers</h3>
-                    <p>Be the first to know about exclusive offers, new services, couriers, tools and more!</p>
-                </div>
+      <div class="footer-newsletter-heading-wrapper">
+        <div class="footer-newsletter">
+          <div class="footer-newsletter-heading">
+            <h3>Sign up to our news & offers</h3>
+            <p>
+              Be the first to know about exclusive offers, new services,
+              couriers, tools and more!
+            </p>
+          </div>
 
-                <form>
-                    <div class="footer-newsletter-email">
-                        <span class="email-icon material-symbols-outlined">
-                            mail
-                        </span>
-                        <input class="email-input" type="email" placeholder="Enter your email">
-                        <!-- <input class="search-input" type="search" placeholder="Search Product"> -->
-                    </div>
-                </form>
+          <form>
+            <div class="footer-newsletter-email">
+              <span class="email-icon material-symbols-outlined"> mail </span>
+              <input
+                class="email-input"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <!-- <input class="search-input" type="search" placeholder="Search Product"> -->
             </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-links-wrapper">
+        <div class="footer-links">
+          <div class="footer-links-images">
+            <div class="footer-links-logo">
+              <img
+                class="logo"
+                src="resources/homedine_logo_1.svg"
+                alt="Homedine Logo"
+                title="Homedine Logo"
+              />
+            </div>
+            <!-- might wanna use a figure caption, more semantically correct? -->
+
+            <figure class="footer-links-trust">
+              <p>Trustpilot</p>
+              <div class="footer-links-trust-boxes">
+                <div>
+                  <span class="star-icon material-symbols-outlined">star </span>
+                </div>
+                <div>
+                  <span class="star-icon material-symbols-outlined">
+                    star
+                  </span>
+                </div>
+                <div>
+                  <span class="star-icon material-symbols-outlined">star</span>
+                </div>
+                <div>
+                  <span class="star-icon material-symbols-outlined">star</span>
+                </div>
+                <div>
+                  <span class="star-icon material-symbols-outlined">star</span>
+                </div>
+              </div>
+              <figcaption>Trustscore 4.9 | 29,000 reviews.</figcaption>
+            </figure>
+          </div>
+
+          <div class="footer-links-company">
+            <ul>
+              <li>
+                <h4>Company</h4>
+              </li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Cookie policy</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Acceptable use policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-shipping_services">
+            <ul>
+              <li>
+                <h4>Shipping Services</h4>
+              </li>
+              <li><a href="#">Ship a package</a></li>
+              <li><a href="#">Track a package</a></li>
+              <li><a href="#">Domestic shipping</a></li>
+              <li><a href="#">International shipping</a></li>
+              <li><a href="#">Bulk shipping</a></li>
+              <li><a href="#">Couriers</a></li>
+              <li><a href="#">Delivery services</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-customers">
+            <ul>
+              <li>
+                <h4>Customers</h4>
+              </li>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Support hub</a></li>
+              <li><a href="#">Preferences</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-links-wrapper">
-            <div class="footer-links">
-                <div class="footer-links-images">
-                    <div class="footer-links-logo">
-                        <img class="logo" src="resources/homedine_logo_1.svg" alt="Homedine Logo" title="Homedine Logo">
-                    </div>
-                    <!-- might wanna use a figure caption, more semantically correct? -->
-
-                    <figure class="footer-links-trust">
-                        <p>Trustpilot</p>
-                        <div class="footer-links-trust-boxes">
-                            <div>
-                                <span class="star-icon material-symbols-outlined">star
-                                </span>
-                            </div>
-                            <div>
-                                <span class="star-icon  material-symbols-outlined">
-                                    star
-                                </span>
-                            </div>
-                            <div>
-                                <span class="star-icon  material-symbols-outlined">star</span>
-                            </div>
-                            <div>
-                                <span class="star-icon  material-symbols-outlined">star</span>
-                            </div>
-                            <div>
-                                <span class="star-icon  material-symbols-outlined">star</span>
-                            </div>
-                        </div>
-                        <figcaption>
-                            Trustscore 4.9 | 29,000 reviews.
-                        </figcaption>
-                    </figure>
-
-                </div>
-
-
-                <div class="footer-links-company">
-                    <uL>
-                        <li>
-                            <h4>Company</h4>
-                        </li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Cookie policy</a></li>
-                        <li><a href="#">Terms & conditions</a></li>
-                        <li><a href="#">Acceptable use policy</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </uL>
-                </div>
-                <div class="footer-links-shipping_services">
-                    <uL>
-                        <li>
-                            <h4>Shipping Services</h4>
-                        </li>
-                        <li><a href="#">Ship a package</a></li>
-                        <li><a href="#">Track a package</a></li>
-                        <li><a href="#">Domestic shipping</a></li>
-                        <li><a href="#">International shipping</a></li>
-                        <li><a href="#">Bulk shipping</a></li>
-                        <li><a href="#">Couriers</a></li>
-                        <li><a href="#">Delivery services</a></li>
-                    </uL>
-                </div>
-                <div class="footer-links-customers">
-                    <uL>
-                        <li>
-                            <h4>Customers</h4>
-                        </li>
-                        <li><a href="#">Log in</a></li>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Support hub</a></li>
-                        <li><a href="#">Preferences</a></li>
-                    </uL>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>Copyright &copy; 2009-2026 | All Rights Reserved</p>
-            </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy; 2009-2026 | All Rights Reserved</p>
         </div>
-
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

@@ -49,6 +49,19 @@ const products = [
   },
 ];
 
+const category = [
+  "Cookware",
+  "Tableware & Dinnerware",
+  "Food Storage",
+  "Utensils & Tools",
+  " Drinkware",
+  "Cleaning & Dish Care",
+  "Zero-Waste Essentials",
+  "Small Appliances",
+  "Gifts & Sets",
+  "Sale & New Arrivals",
+];
+
 const productCards = document.querySelector(".product-cards");
 
 const productCards_HTML = products
@@ -69,6 +82,7 @@ const productCards_HTML = products
                             <p class="product-price">
                                 <b>$${product.price}</b>
                             </p>
+                            <span class="shopping-bag material-symbols-outlined">shopping_bag</span>
                             <button class="Add-to-cart">+ Cart</button>
                         </div>
                     </div>
@@ -76,6 +90,57 @@ const productCards_HTML = products
   })
   .join(" ");
 
-// console.log(productCards_HTML);
-// console.log(products);
 productCards.innerHTML = productCards_HTML;
+
+const navbarInput = document.getElementById("nav-search");
+const searchResults = document.querySelector(".result-box");
+const searchBox = document.querySelector(".search");
+
+const navbarInputTablet = document.getElementById("nav-search-tablet");
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".search")) {
+    searchResults.innerHTML = "";
+    const searchBox = document.querySelector(".search");
+    searchBox.classList.remove("open");
+  }
+});
+
+function renderList(list) {
+  if (list.length === 0) {
+    searchResults.innerHTML = "";
+    searchBox.classList.remove("open");
+    return;
+  }
+
+  const items = list
+    .map((item) => {
+      return `
+    <li>  <a href="">
+      <span class="search-icon material-symbols-outlined"
+      >search</span
+      >${item.name}</a>
+    </li>
+    `;
+    })
+    .join(" ");
+
+  searchResults.innerHTML = "<ul>" + items + "</ul>";
+  searchBox.classList.add("open");
+}
+
+function updatedList() {
+  const query = (navbarInput || navbarInputTablet).value.toLowerCase().trim();
+  const list =
+    query === ""
+      ? products
+      : products.filter((product) =>
+          product.name.toLowerCase().includes(query),
+        );
+  renderList(list);
+}
+
+navbarInput.addEventListener("click", updatedList);
+navbarInput.addEventListener("input", updatedList);
+navbarInputTablet.addEventListener("click", updatedList);
+navbarInputTablet.addEventListener("input", updatedList);
